@@ -50,4 +50,27 @@
   .prose li {
     @apply text-gray-900;
   }
+  .h-link:hover::after {
+    content: '';
+    @apply absolute left-0 w-full h-1 -top-5 bg-primary right-1/2 bg-opacity-10;
+  }
+  .h-link:active::after {
+    content: '';
+    @apply absolute left-0 w-full h-1 -top-5 bg-primary right-1/2 bg-opacity-10;
+  }
+  .custom-heading::after {
+    content: '';
+    @apply absolute left-0 w-5 h-1 rounded -bottom-2 bg-secondary;
+  }
+  .bullets::before {
+    content: '';
+    @apply absolute w-3 h-3 rounded-full top-1 -left-5;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 1) 32%,
+      rgba(255, 195, 129, 1) 42%,
+      rgba(255, 133, 0, 1) 100%
+    );
+  }
 }

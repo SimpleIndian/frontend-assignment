@@ -24,5 +24,8 @@
   "tailwindCSS.emmetCompletions": true,
 
   "telemetry.enableTelemetry": false,
-  "gutterpreview.sourceFolder": "public"
+  "gutterpreview.sourceFolder": "public",
+  "cSpell.words": [
+    "MWBE"
+  ]
 }
