@@ -26,6 +26,7 @@ export default class MyDocument extends Document {
             crossOrigin="true"
             type="font/woff2"
           />
+          <meta name="theme-color" content="#0047AB" />
         </Head>
         <body>
           <Main />

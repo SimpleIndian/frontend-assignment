@@ -14,7 +14,7 @@ const Nav = () => {
     isOpen ? body.classList.add('overflow-hidden') : body.classList.remove('overflow-hidden');
   }, [isOpen]);
   return (
-    <nav className="flex items-center justify-between p-1 shadow-sm md:py-3 xl:px-14 md:justify-between md:px-7">
+    <nav className="flex items-center justify-between p-1 shadow-md md:py-3 xl:px-14 md:justify-between md:px-7">
       <Logo />
       <DesktopNav links={navLinks} />
       <MobileNav isOpen={isOpen} links={navLinks}></MobileNav>

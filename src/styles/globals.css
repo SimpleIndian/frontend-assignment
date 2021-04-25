@@ -73,7 +73,23 @@
       rgba(255, 133, 0, 1) 100%
     );
   }
-  .custom-bg{
-    background: radial-gradient(80.11% 80.11% at 50% 19.89%, #F3F5F9 0%, rgba(243, 245, 249, 0.5) 100%), #FFFFFF;
+  .custom-bg {
+    background: radial-gradient(
+        80.11% 80.11% at 50% 19.89%,
+        #f3f5f9 0%,
+        rgba(243, 245, 249, 0.5) 100%
+      ),
+      #ffffff;
+  }
+  .hero-bg {
+    background: linear-gradient(44.42deg, #fff1e1 28.4%, #ffffff 52.55%);
+  }
+}
+.clipper {
+  clip-path: polygon(0%, 0, 100% 0, 100% 100%, 0 100%);
+}
+@media (min-width: 768px) {
+  .clipper {
+    clip-path: polygon(20%, 0, 100% 0, 100% 100%, 0 100%);
   }
 }

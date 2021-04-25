@@ -1,7 +1,6 @@
 import { RiStarFill } from 'react-icons/ri';
 
 const ReviewCard = ({ name, review }) => {
-  //TODO: fix shaw clipping on bottom
   return (
     <div className="h-full p-3 my-4 bg-white rounded shadow-md w-72">
       <h4 className="font-medium text-gray-700 capitalize">{name}</h4>

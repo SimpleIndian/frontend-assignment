@@ -4,8 +4,8 @@ import IconBtn from 'components/shared/IconBtn';
 import InLink from 'components/shared/InLink';
 import { RiArrowRightLine } from 'react-icons/ri';
 
-import GoogleReview from './GoogleReview';
-import ReviewSlider from './ReviewSlider';
+import GoogleReview from './review/GoogleReview';
+import ReviewSlider from './review/ReviewSlider';
 
 const reviews = [
   {

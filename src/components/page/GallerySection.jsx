@@ -1,5 +1,6 @@
 import 'splide-nextjs/splide/dist/css/themes/splide-default.min.css';
 
+import { gallery } from 'data/gallery';
 import { Splide, SplideSlide } from 'splide-nextjs/react-splide';
 
 const splideOption = {
@@ -27,20 +28,19 @@ const splideOption = {
     }
   }
 };
-const images = [
-  { src: '/images/p1.jpeg', alt: 'baby' },
-  { src: '/images/p2.jpeg', alt: 'hand2' },
-  { src: '/images/p3.jpeg', alt: 'bird' },
-  { src: '/images/p4.jpeg', alt: 'care' },
-  { src: '/images/p5.jpeg', alt: 'hand' }
-];
+
 const GallerySection = () => {
   return (
     <section className="w-full py-10 bg-white md:p-0">
       <Splide options={splideOption}>
-        {images.map((each) => (
+        {gallery.map((each) => (
           <SplideSlide key={each.alt}>
-            <img src={each.src} alt={each.alt} className="w-full h-full rounded md:rounded-none" />
+            <img
+              src={each.src}
+              alt={each.alt}
+              className="w-full h-full rounded md:rounded-none"
+              loading="lazy"
+            />
           </SplideSlide>
         ))}
       </Splide>

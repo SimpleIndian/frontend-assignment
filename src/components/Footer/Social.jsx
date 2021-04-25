@@ -3,7 +3,7 @@ import SocialMedia from './SocialMedia';
 
 const Social = () => {
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 md:ml-3">
       <NewsLetter></NewsLetter>
       <div className="flex justify-center space-x-4 md:justify-start">
         <img src="/images/chap-foot.png" width="50" height="50" alt="chap" />
