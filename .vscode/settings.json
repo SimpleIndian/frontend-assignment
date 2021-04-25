@@ -25,7 +25,5 @@
 
   "telemetry.enableTelemetry": false,
   "gutterpreview.sourceFolder": "public",
-  "cSpell.words": [
-    "MWBE"
-  ]
+  "cSpell.words": ["MWBE"]
 }

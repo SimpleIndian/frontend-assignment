@@ -6,16 +6,12 @@ import GallerySection from 'components/page/GallerySection';
 import HeroSection from 'components/page/HeroSection';
 import ReviewSection from 'components/page/ReviewSection';
 import Alert from 'components/shared/Alert';
-import { Head } from 'next/document';
 import { RiMapPin2Fill } from 'react-icons/ri';
 import Layout from 'src/Layout';
 
 export default function Home() {
   return (
     <Layout>
-      <Head>
-        <title>Future of health - Universacare</title>
-      </Head>
       <HeroSection></HeroSection>
       <Alert
         icon={<RiMapPin2Fill />}
